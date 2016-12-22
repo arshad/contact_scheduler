@@ -17,7 +17,7 @@ trait ContactSchedulerSettingsTrait {
    *  The default value.
    * @return mixed
    */
-  public static function getThirdPartySetting(ContactFormInterface $contactForm, string $name, $default_value = NULL) {
+  public static function getThirdPartySetting(ContactFormInterface $contactForm, $name, $default_value = NULL) {
     return $contactForm->getThirdPartySetting('contact_scheduler', $name, $default_value);
   }
 
@@ -31,7 +31,7 @@ trait ContactSchedulerSettingsTrait {
    * @param $value
    *  The value of the setting.
    */
-  public static function setThirdPartySetting(ContactFormInterface $contactForm, string $name, $value) {
+  public static function setThirdPartySetting(ContactFormInterface $contactForm, $name, $value) {
     $contactForm->setThirdPartySetting('contact_scheduler', $name, $value);
   }
 }

@@ -107,7 +107,7 @@ class ContactSchedulerMessageFormHandler {
    * @param array $form
    *  The form array.
    */
-  public function displayMessageInForm(string $message, array &$form) {
+  public function displayMessageInForm($message, array &$form) {
     // Hide all form elements.
     $this->hideFormElements($form);
 
